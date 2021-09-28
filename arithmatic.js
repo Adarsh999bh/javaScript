@@ -1,0 +1,12 @@
+var args = process.argv.slice(2);
+console.log("My arry is "+args);
+let a = parseInt(args[0]);
+let b = parseInt(args[1]);
+let c = parseInt(args[2]);
+let array = new Array();
+array.push(a + b * c);
+array.push((a % b) + c);
+array.push(c + a / b);
+array.push(a * b + c);
+console.log("Max is " + Math.max(...array));
+console.log("Min is " + Math.min(...array));
